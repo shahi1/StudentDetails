@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <EditText
+        android:hint="Enter Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etName"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Gender"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:layout_margin="5dp"
+        android:id="@+id/tvGender"></TextView>
+
+
+
+    <RadioGroup
+            android:id="@+id/rdoGroup"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+
+    <RadioButton
+        android:id="@+id/rdoMale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="Male"/>
+
+    <RadioButton
+        android:id="@+id/rdoFemale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="Female"/>
+
+    <RadioButton
+        android:id="@+id/rdoOthers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="Others"/>
+    </RadioGroup>
+
+
+    <Spinner
+        android:id="@+id/sCountry"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+
+
+        />
+
+    <AutoCompleteTextView
+        android:hint="Enter Batch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/actvBatch"></AutoCompleteTextView>
+
+
+
+    <Button
+        android:hint="Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/btnSave"
+        ></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Output"
+        android:textSize="25dp"
+        android:id="@+id/tvOutput"></TextView>
+
+</LinearLayout>
